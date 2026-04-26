@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Currency converter</h1>
+      <div class="currrency-container">
+            <select id="currency-first">
+                <option id="USD" selected>USD</option>
+                <option id="EUR">EUR</option>
+                <option id="CAD">CAD</option> 
+                <option id="AUD">AUD</option> 
+            </select>
+            <input type="number" id="worth-first" value="1" min="0">
+        </div>
+
+      <div class="currrency-container">
+            <select id="currency-second">
+                <option id="PEN">PEN</option>
+                <option id="CRC">CRC</option>
+                <option id="MXN" selected>MXN</option> 
+                <option id="CLP">CLP</option> 
+    
+            </select>
+            <input type="number" id="worth-second" disabled>
+        </div>
+        <p class="exchange-rate" id ="exchange-rate" >1 US Dollar = 17,38 MXN</p>
+
+    </div>
+
+
+
+    <script src="converter.js"></script>
+</body>
+</html>
